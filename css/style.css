@@ -187,6 +187,8 @@ h1{
   margin: 20px 13px;
   border: none;
   border-radius: 3px;
+  color: rgba(112, 112, 112, 0.77);
+  font-family: 'Open Sans', sans-serif;
 }
 .riquadro_prenotazioni input[type="submit"]{
   float: right;
@@ -212,17 +214,6 @@ h1{
   color: #7FD3D3;
   cursor: pointer;
   transform: translateX(15px);
-
-}
-::-moz-input-placeholder{
-  font-family: 'Open Sans', sans-serif;
-  color: rgba(112, 112, 112, 0.77);
-
-}
-::-webkit-input-placeholder{
-  font-family: 'Open Sans', sans-serif;
-  color: rgba(112, 112, 112, 0.77);
-
 
 }
 #chef{
@@ -340,22 +331,6 @@ h2::after{
   list-style-position: inside;
   list-style-image: url(../img/punto_lista_blu.png);
 }
-/* 
-.riquadro_immagine {
-  transition: all 0.8s cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-  transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); 
-  max-width: 100%;
-  left: 130%;
-  overflow: hidden;
-  position: absolute;
-
-
-}
-
-
-
- */
-
 #chef_passione{
   min-height: 600px;
   padding-top: 80px;
@@ -367,9 +342,6 @@ h2::after{
   position: relative;
   overflow: hidden;
 }
-/* .slider_desktop{
-  position: relative;
-} */
 .one{
   background-image: url(../img/gnocca_pool.png);
   background-repeat: no-repeat;
@@ -548,11 +520,64 @@ h3{
   background-position: center;
   background-size: cover;
 }
-.modulo img{
-  margin-top: 40px;
+.newsletter_contenitore{
+  display: table-cell;
+  vertical-align: middle;
+}
+.newsletter_title{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.newsletter_title::after{
+  content: '';
+  display: block;
+  margin-bottom: 40px;
+  height: 5px;
+  width: 0;
+  background: transparent;
+  transition: width 1s ease, background-color 1s ease;
+  border-radius: 5px;
+}
+.riquadro_blu_testo:hover .newsletter_title::after{
+  width: 100%;
+  background: #345974;
+}
+
+.newsletter_text{
+  margin-left: 40px;
+  
+}
+.newsletter_form{
+  width: 80%;
+  margin: 0 auto;
+  
+}
+.newsletter_form input{
+  width: 90%;
+  margin-top: 20px;
+  height: 30px;
+  border-radius: 3px;
+  border: none;
+  padding: 0 5%;
 
 }
-.newsletter_text{
+.newsletter_form input[type="submit"]{
+  width: 100%;
+  height: 40px;
+  transition: all .4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  background-color: #345974;
+  border-radius: 5px;
+  color: #fff;
+}
+.newsletter_form input[type="submit"]:hover{
+  background-color: #fff;
+  color: #7FD3D3;
+  cursor: pointer;
+} 
+
+/* .newsletter_text{
   font-size: 14px;
   padding: 40px 85px;
 
@@ -586,7 +611,7 @@ h3{
   background-color: #fff;
   color: #7FD3D3;
   cursor: pointer;
-}
+} */
 .follow_us{
   max-height: 90px;
   text-align: center;
@@ -694,6 +719,8 @@ iframe{
   margin-right: 200px;
 }
 /*fine index html*/
+
+
 .restaurant__slide{
   background-image: url(../img/acquario.webp);
 }

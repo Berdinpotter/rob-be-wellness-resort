@@ -178,8 +178,8 @@
   <div class="slide one">
     <div class="riquadro_blu rbd">
       <div class="riquadro_blu_testo clearfix">
-      <h3>Lorem ipsum dolor sit amet, consecte...</h3>
-    </div>
+        <h3>Lorem ipsum dolor sit amet, consecte...</h3>
+      </div>
     </div>
   </div>
   <!-- inizio rooms -->
@@ -204,7 +204,7 @@
   <div class="slide two">
     <div class="riquadro_blu rbs">
       <div class="riquadro_blu_testo">
-      <h3>IL VOSTRO BENESSERE NELLE NOSTRE MANI</h3>
+        <h3>IL VOSTRO BENESSERE NELLE NOSTRE MANI</h3>
       </div>
     </div>
   </div>
@@ -257,8 +257,8 @@
   <div class="slide three">
     <div class="riquadro_blu rbs">
       <div class="riquadro_blu_testo">
-      <h3>Si cucina sempre pensando a qualcuno, altrimenti stai solo preparando da mangiare…</h3>
-    </div>
+        <h3>Si cucina sempre pensando a qualcuno, altrimenti stai solo preparando da mangiare…</h3>
+      </div>
     </div>
   </div>
   <!-- inizio cucina -->
@@ -275,9 +275,9 @@
         <a class="ancora_testo" href="ristorante.html" title="Area Wellness">Il Nostro Ristorante</a>
       </article>
       <figure class="riquadro_immagine dx">
-        <a href="#"><img class="tris med" src="img/mediterranea.png" alt="Resort sunset"></a>
-        <a href="#"><img class="tris ori" src="img/sushi.png" alt="Resort sunset"></a>
-        <a href="#"><img class="tris veg" src="img/vegetariana.png" alt="Resort sunset"></a>
+        <img class="tris med" src="img/mediterranea.png" alt="Resort sunset">
+        <img class="tris ori" src="img/sushi.png" alt="Resort sunset">
+        <img class="tris veg" src="img/vegetariana.png" alt="Resort sunset">
       </figure>
     </div>
   </section>
@@ -322,13 +322,19 @@
   <div class="slide five newsletter">
 
     <div class="riquadro_blu rbs">
-      <p class="newsletter_text">Iscriviti alla nostra Newsletter per non perdere offerte, eventi e novità.</p>
-      <form class="newsletter_form" action="invio_dati.php" method="post">
-        <p>
-          <input type="email" name="Email_for" placeholder="email">
-          <input type="submit" value="Iscriviti!">
-        </p>
-      </form>
+      <div class="riquadro_blu_testo">
+        <div class="newsletter_contenitore">
+          <h2 class="newsletter_title">Newsletter</h2>
+          <p class="newsletter_text">Iscriviti alla nostra Newsletter per non perdere offerte, eventi e novità.</p>
+          <form class="newsletter_form" action="invio_dati.php" method="post">
+            <p>
+              <input type="text" name="Name_for" placeholder="Nome"><br>
+              <input type="email" name="Email_for" placeholder="Em@il"><br>
+              <input type="submit" value="Iscriviti!">
+            </p>
+          </form>
+        </div>
+      </div>
     </div>
 
   </div>
@@ -347,13 +353,13 @@
   <footer class="slide">
     <div id="contenitore_contatti" class="riquadro_blu rbd">
       <div class="contenitore_contatti_paragrafo">
-      <h2>Contattaci</h2>
-      <ul>
-        <li class="mail"><a href="">info@mwr.it</a></li>
-        <li class="tel"><a href="">+39 0754 6493464</a></li>
-        <li class="address"><a href="">Via Goffredo de Paperis, <br>35, Sassari (SS)</a></li>
-      </ul>
-    </div>
+        <h2>Contattaci</h2>
+        <ul>
+          <li class="mail"><a href="">info@mwr.it</a></li>
+          <li class="tel"><a href="">+39 0754 6493464</a></li>
+          <li class="address"><a href="">Via Goffredo de Paperis, <br>35, Sassari (SS)</a></li>
+        </ul>
+      </div>
 
     </div>
     <iframe
