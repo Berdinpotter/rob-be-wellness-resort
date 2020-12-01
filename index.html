@@ -41,6 +41,9 @@
       $('.slide').mouseover(function () {
         $(this).contents('.rbs').addClass('slide_out_rbs');
       });
+      $('.slide').mouseover(function () {
+        $(this).find('.riquadro_blu_testo').addClass('slide_out_title');
+      });
 
 
 
@@ -167,14 +170,16 @@
         <a class="ancora_testo" href="#" title="Leggi di più"><span>Il Nostro Resort</span></a>
       </article>
       <figure class="riquadro_immagine dx">
-        <img class="immagine_destra" src="img/resort_night.png" alt="Resort sunset">
+        <img class="immagine_destra" src="img/resort_night.jpg" alt="Resort sunset">
       </figure>
     </div>
   </section>
   <!-- inizio slide 1 -->
   <div class="slide one">
     <div class="riquadro_blu rbd">
+      <div class="riquadro_blu_testo clearfix">
       <h3>Lorem ipsum dolor sit amet, consecte...</h3>
+    </div>
     </div>
   </div>
   <!-- inizio rooms -->
@@ -198,7 +203,9 @@
   <!-- inizio slide 2 -->
   <div class="slide two">
     <div class="riquadro_blu rbs">
+      <div class="riquadro_blu_testo">
       <h3>IL VOSTRO BENESSERE NELLE NOSTRE MANI</h3>
+      </div>
     </div>
   </div>
   <!-- inizio wellness -->
@@ -249,9 +256,10 @@
   <!-- inizio slide 3 -->
   <div class="slide three">
     <div class="riquadro_blu rbs">
+      <div class="riquadro_blu_testo">
       <h3>Si cucina sempre pensando a qualcuno, altrimenti stai solo preparando da mangiare…</h3>
     </div>
-
+    </div>
   </div>
   <!-- inizio cucina -->
   <section id="cucina_benessere" class="box_description">
