@@ -30,6 +30,7 @@ img{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 .home__slide{
   background-image: url(../img/sea.jpg);
@@ -38,14 +39,14 @@ img{
 .main_menu{
   width: 1200px;
   margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  position: fixed;
-  background: rgba(127, 211, 211, 0.5);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: absolute;
+  
   z-index: 4;
   border-radius: 7px;
   top: 10px;
-  transition: all 0.8s ease;
+  
  
 }
 /* .out{
@@ -78,8 +79,13 @@ img{
 
   font-size: 16px;
 }
+.sfondo{
+  background: rgba(127, 211, 211, 0.75);
+  
+}
+
 .main_ancore_background{
-  background: rgba(81, 135, 175, 0.75);
+  background: rgba(81, 134, 175, 0.863);
   color: #fff;
   transform: translateY(10px)
 }
@@ -110,7 +116,7 @@ img{
 
 }  
 .sub_ancore:hover{
-  background: rgba(81, 135, 175, 0.75);
+  background: rgba(81, 134, 175, 0.822);
   color: #fff;
   transform: translateY(5px)
 }
@@ -801,7 +807,9 @@ height: 100%;
   color: #7FD3D3;
   margin: 0;
   padding-left: 30px;
+  position: relative;
 }
+
 
 .paragrafo_scacco p{
   padding: 30px;
@@ -812,7 +820,7 @@ height: 100%;
 .sale_restaurant{
   width: 40%;
   height: 575px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   color: rgba(112, 112, 112, 0.77);
   
@@ -861,10 +869,6 @@ position: absolute;
 }*/
 /******inizio stile stanze.html******/
 
-#dettagli, #relax{
-  min-height: 500px;
-  padding-top: 50px;
-}
 
 
 .stanze__slide{
@@ -873,14 +877,24 @@ position: absolute;
 .stanze__slide h1, .stanze__slide p, .wellness__slide h1, .wellness__slide p{
   color: #fff;
 }
-.camera_uno{
+.camera_suite1{
   background-image: url(../img/suite.jpg);
 }
-.camera_due{
+.camera_suite2{
+  background-image: url(../img/suite2.jpg);
+}
+
+.camera_superior1{
   background-image: url(../img/vasca_suite.jpg);
 }
-.camera_tre{
+.camera_superior2{
+  background-image: url(../img/superior2.jpg);
+}
+.camera_classic1{
   background-image: url(../img/stanza_classic.jpg);
+}
+.camera_classic2{
+  background-image: url(../img/classic2.jpg);
 }
 .vasca_gnocca{
   background-image: url(../img/gnocca_vasca.jpg);
@@ -890,17 +904,32 @@ position: absolute;
 .wellness__slide{
   background-image: url(../img/sassi.jpg);
 }
-.trat_uno{
+.trat_turco1{
   background-image: url(../img/bagno_turco.jpg);
 }
-.trat_due{
+.trat_turco2{
+  background-image: url(../img/bagnoturco2.jpg);
+  background-position:0 0;
+}
+.trat_sauna1{
   background-image: url(../img/sauna2.jpg);
 }
-.trat_tre{
+.trat_sauna2{
+  background-image: url(../img/sauna3.jpg);
+  background-position:0 0;
+}
+.trat_idro1{
   background-image: url(../img/idromassaggio.jpg);
 }
-.trat_quattro{
+.trat_idro2{
+  background-image: url(../img/idro2.jpg);
+}
+.trat_well_room1{
   background-image: url(../img/vasca_personale.jpg);
+}
+.trat_well_room2{
+  background-image: url(../img/wellnessroom2.jpg);
+  
 }
 .tipa_sudata{
   background-image: url(../img/gnocca_sudata.jpg);
