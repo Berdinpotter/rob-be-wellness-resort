@@ -38,10 +38,21 @@ img{
 .main_menu{
   width: 1200px;
   margin: 0 auto;
-  padding-top: 20px;
-  
-
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  background: rgba(127, 211, 211, 0.5);
+  z-index: 4;
+  border-radius: 7px;
+  top: 10px;
+  transition: all 0.8s ease;
+ 
 }
+/* .out{
+
+  top: 10px;
+
+} */
 .main li{
   float: left;
   width: 14%;
@@ -67,14 +78,13 @@ img{
 
   font-size: 16px;
 }
-.main_ancore:hover{
+.main_ancore_background{
   background: rgba(81, 135, 175, 0.75);
   color: #fff;
   transform: translateY(10px)
-  
 }
 .sub{
-  position: absolute;
+  position: absolute; 
   margin-top: 15px;
   max-height: 0;
   overflow: hidden;
@@ -116,11 +126,12 @@ color: rgba(255, 255, 255, 0.7);
 .social_fixed{
   position: fixed;
   right: 10px;
-  top: 120px;
+  top: 150px;
   background-color: #345974;
   z-index: 1;
   text-align: center;
   border-radius: 5px;
+
 }
 .fix{
   padding: 10px;
@@ -148,7 +159,7 @@ color: rgba(255, 255, 255, 0.7);
 h1{
   font-size: 100px;
   margin-left: 20%;
-  padding-top: 150px;
+  padding-top: 300px;
   text-transform: uppercase;
   font-weight: lighter;
   font-style: italic;
@@ -170,12 +181,15 @@ h1{
 }
 .riquadro_prenotazioni{
   height: 70px;
-  width: 800px;
+  
   background-color: #7FD3D3;
   margin: 0px auto;
   position: relative;
   border-radius: 5px;
   transition: all 0.8s ease;
+}
+.stanze_albergo{
+  width: 900px;
 }
 #booking:hover .riquadro_prenotazioni{
   margin: -30px auto;
@@ -184,7 +198,7 @@ h1{
 .prenotazioni_input{
   height: 30px;
   width: 140px;
-  margin: 20px 13px;
+  margin: 20px 30px;
   border: none;
   border-radius: 3px;
   color: rgba(112, 112, 112, 0.77);
@@ -192,7 +206,7 @@ h1{
 }
 .riquadro_prenotazioni input[type="submit"]{
   float: right;
-  margin-left: 13px;
+  margin-left: 10px;
   margin-top: 0;
   height: 100%;
   background-color: #345974;
@@ -418,17 +432,18 @@ h3{
   position: relative;
 }
 .sky{
-  width: 48%;
+  width: 50%;
+  float: left;
 }
 .sky img{
   max-width: 100%;
 }
-.pool{
+/* .pool{
   float: left;
 }
 .resort{
   float: right;
-}
+} */
 .three{
   position: relative;
   background-image: url(../img/chef.png);
@@ -577,41 +592,7 @@ h3{
   cursor: pointer;
 } 
 
-/* .newsletter_text{
-  font-size: 14px;
-  padding: 40px 85px;
 
-}
-.newsletter_form{
-  margin-top: 20px;
-}
-.newsletter_form input{
-  height: 40px;
-  width: 50%;
-  padding-left: 10px;
-  font-family: op;
-  border: none;
-  color: #D4D4D4;
-  font-size: 1.1em;
-  margin-left: 85px;
-  border-radius: 5px;
-}
-
-.newsletter_form input[type="submit"]{
-  width: 40%;
-  margin: 60px 50%;
-  padding: 0;
-  transition: all .4s;
-  -webkit-transition: all .4s;
-  -moz-transition: all .4s;
-  background-color: #345974;
-  border-radius: 5px;
-}
-.newsletter_form input[type="submit"]:hover{
-  background-color: #fff;
-  color: #7FD3D3;
-  cursor: pointer;
-} */
 .follow_us{
   max-height: 90px;
   text-align: center;
@@ -719,7 +700,9 @@ iframe{
   margin-right: 200px;
 }
 /*fine index html*/
-
+.fascia_cucina{
+  margin-top: 50px;
+}
 
 .restaurant__slide{
   background-image: url(../img/acquario.webp);
@@ -727,33 +710,63 @@ iframe{
 .restaurant__slide h1, .restaurant__slide p {
   color: #fff;
 }
+.tavolo_ristorante{
+  width: 500px;
+}
 .riquadro_scacco{
-  width: 50%;
-  height: 600px;
+  width: 33.33%;
+  height: 500px;
   float: left;
+  display: table;
 }
 .immagine_scacco{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
+.immagine_scacco::after{
+  content: '';
+  background-color: #7fd3d380;
+  height: 100% ;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
 .pennette{
   background-image: url(../img/pennette.png);
+}
+.pizza{
+  background-image: url(../img/pizza.jpg);
 }
 .vegan{
   background-image: url(../img/vegetariana2.png);
 }
+.vegan2{
+  background-image: url(../img/vegan4.jpg);
+}
 .sushi2{
   background-image: url(../img/sushu2.png);
+}
+.sushi3{
+  background-image: url(../img/sushi3.jpg);
 }
 .colazione{
   background-image: url(../img/colazione.png);
 }
+.colazione2{
+  background-image: url(../img/cappuccino.jpg);
+}
 .paragrafo_scacco{
   min-width: 70%;
-  height: 100%;
-  margin: 0 auto 20px;
+  font-family: 'Open Sans', sans-serif;
+height: 100%;
+  margin: 0 auto;
   position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  
 }
 .paragrafo_scacco a{
   text-decoration: none;
@@ -762,75 +775,61 @@ iframe{
   content:attr(title);
   position: absolute;
   min-width: 150px;
-  height: 60px;
+  height: 40px;
   background-color: #345974;
   padding: 0 20px;
   text-align: center;
-  line-height: 60px;
+  line-height: 40px;
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.78);
   text-transform: uppercase;
-  left: 60px;
-  bottom: 90px;
+  right:30px;
+  bottom: 20px;
   transition: 0.5s;
-}
-.sfuma_sx a::after{
-  left: 100%;
-  margin-left: -240px;
+  border-radius: 5px;
+  
 }
 .paragrafo_scacco a:hover::after{
   background-color: #7FD3D3;
 }
+
 .immagine_scacco {
-  position: relative;
   z-index: 0.5;
 }
-.paragrafo_scacco a::before{
-  content: "";
-  height: 100%;
-  width: 0;
-  position: absolute;
-  bottom: 40px;
-  transition: 0.5s;
-}
-.sfuma_sx a::before{
-  background: rgb(127,211,211);
-  background: linear-gradient(90deg, rgba(127,211,211,1) 0%, rgba(0,212,255,0) 100%);
-  left: -10%;
-  z-index:-1;
-}
-.sfuma_dx a::before{
-  background: rgb(127,211,211);
-  background: linear-gradient(270deg, rgba(127,211,211,1) 0%, rgba(0,212,255,0) 100%);
-  right: -10%;
-}
-.paragrafo_scacco a:hover::before{
-  width: 50%;
+.paragrafo_scacco h2{
+  color: #7FD3D3;
+  margin: 0;
+  padding-left: 30px;
 }
 
 .paragrafo_scacco p{
-  margin: 30px 60px;
+  padding: 30px;
+  font-size: 16px;
+  color: rgba(112, 112, 112, 0.77);
+}
 
-  font-size: 1.1em;
-  text-align: justify;
-  color: rgba(112, 112, 112, 0.77);
-  padding: 50px 0;
-}
-.paragrafo_scacco h2{
-  color: rgba(112, 112, 112, 0.77);
-}
-.spazio_scacchi{
-  margin-top: 40px;
-}
 .sale_restaurant{
-  width: 48%;
+  width: 40%;
   height: 575px;
   font-family: 'Lato', sans-serif;
-  font-size: 1.1em;
-  text-align: justify;
+  font-size: 16px;
   color: rgba(112, 112, 112, 0.77);
-  padding: 10px;
+  
+  float: left;
+  width: 50%;
+  display: table;
+}
+.incastro{
+  position: absolute;
+  bottom: 0;
+}
+.testo_sala{
+  display: table-cell;
+  vertical-align: middle;
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
 }
 .testo_sala{
   width: 80%;

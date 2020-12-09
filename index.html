@@ -26,15 +26,10 @@
         $(this).toggleClass('cerca_moove');
       });
 
-      //$('.riquadro_testo').hover(function(){
-      //$(this).next('.tris').toggleClass('tris_show');
-
-      //});
 
       $('.contenitore').hover(function () {
         $(this).contents('.riquadro_testo').toggleClass('riquadro_testo_shadow');
       });
-
       $('.slide').mouseover(function () {
         $(this).contents('.rbd').addClass('slide_out_rbd');
       });
@@ -45,6 +40,17 @@
         $(this).find('.riquadro_blu_testo').addClass('slide_out_title');
       });
 
+      $('.main_ancore').hover(function (event) {
+        $(this).toggleClass('main_ancore_background');
+      });
+      $('.sub').hover(function (event) {
+        $(this).prev().toggleClass('main_ancore_background');
+      });
+      /* $('.wave_burger').click(function(event){
+        $('.main_menu').toggleClass('out');
+        event.preventDefault;
+      });
+ */
 
 
 
@@ -67,8 +73,8 @@
 
   <header id="slide_principal" class="home__slide">
     <div class="social_fixed">
-      <a href="index.html" title="Torna alla Home">
-        <img src="img/logo_social.png" alt="Torna alla home" height="17" width="17">
+      <a  href="#" title="Torna alla Home">
+        <img class="wave_burger" src="img/menu.png" alt="Torna alla home" height="17" width="17">
       </a>
       <a href="#" title="Instagram"><i class="fab fa-instagram fix"></i></a>
       <a href="#" title="Facebook"><i class="fab fa-facebook-f fix"></i></a>
@@ -97,7 +103,7 @@
               <li><a class="sub_ancore" href="ristorante.html" title="ristorante">ristorante</a>
             </ul>
           </li>
-          <li><a href="#"><img src="img/RBWR_grey.png" alt="Rob.beach Logo" height="100" width="100"></a></li>
+          <li><a –><img src="img/RBWR_grey.png" alt="Rob.beach Logo" height="100" width="100"></a></li>
           <li><a class="main_ancore" href="#">outdoor <span><i class="fas fa-angle-down"></i></span></a>
             <ul class="sub">
               <li><a class="sub_ancore" href="#" title="Area Wellness">A cavallo</a>
@@ -120,11 +126,12 @@
         </ul>
       </nav>
       <h1>rob beach wellness</h1>
-      <p>Benessere del corpo e della mente</p>-->
+      <p>Benessere del corpo e della mente</p>
     </div>
   </header>
+  <!-- inizio booking -->
   <div id="booking" class="clearfix">
-    <div class="riquadro_prenotazioni">
+    <div class="riquadro_prenotazioni stanze_albergo">
       <form action="invio dati.php" method="post">
         <p>
           <input class="prenotazioni_input" type="date" name="Check_in" placeholder="Check in...">
