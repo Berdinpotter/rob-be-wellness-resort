@@ -14,36 +14,46 @@
 img{
   border: none;
 }
-
+/* body{
+  width: 1440px;
+  margin: 0 auto;
+} */
 .contenitore{
   font-family: 'Open Sans', sans-serif;
   max-width: 1200px;
   margin: 0 auto;
   color: rgba(112, 112, 112, 0.77);
-  position: relative;
+  
 }
 #slide_principal{
   min-height: 800px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
 .home__slide{
   background-image: url(../img/sea.jpg);
 }
-.restaurant__slide{
-  background-image: url(../img/acquario.webp);
-}
-.restaurant__slide h1, .restaurant__slide p {
-  color: #fff;
-}
+
 .main_menu{
   width: 1200px;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: absolute;
   
-
+  z-index: 4;
+  border-radius: 7px;
+  top: 10px;
+  
+ 
 }
+/* .out{
+
+  top: 10px;
+
+} */
 .main li{
   float: left;
   width: 14%;
@@ -63,20 +73,24 @@ img{
   text-decoration: none;
   text-transform: uppercase;
   width: 100%;
-  transition: all 0.5s;
+  transition: all 1s;
   border-radius: 7px;
   color: rgba(83, 83, 83, 0.75);
 
-  font-size: 18px;
+  font-size: 16px;
 }
-.main_ancore:hover{
-  background: rgba(81, 135, 175, 0.75);
-  color: #fff;
-  transform: translateY(10px)
+.sfondo{
+  background: rgba(127, 211, 211, 0.75);
   
 }
+
+.main_ancore_background{
+  background: rgba(81, 134, 175, 0.863);
+  color: #fff;
+  transform: translateY(10px)
+}
 .sub{
-  position: absolute;
+  position: absolute; 
   margin-top: 15px;
   max-height: 0;
   overflow: hidden;
@@ -98,11 +112,11 @@ img{
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
-  transition: all 0.5s;
+  transition: all 1s;
 
 }  
 .sub_ancore:hover{
-  background: rgba(81, 135, 175, 0.75);
+  background: rgba(81, 134, 175, 0.822);
   color: #fff;
   transform: translateY(5px)
 }
@@ -115,121 +129,15 @@ color: rgba(255, 255, 255, 0.7);
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*#header{
-min-height: 80px;
-display: flex;
-justify-content: center;
-font-family: 'Open Sans', sans-serif;
-text-transform: uppercase;
-}
-.restaurant__header{
-background: rgb(52,89,116);
-background: -moz-linear-gradient(180deg, rgba(52,89,116,1) 10%, rgba(255,255,255,0) 100%);
-background: -webkit-linear-gradient(180deg, rgba(52,89,116,1) 10%, rgba(255,255,255,0) 100%);
-background: linear-gradient(180deg, rgba(52,89,116,1) 10%, rgba(255,255,255,0) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#345974",endColorstr="#ffffff",GradientType=1);
-}
-.main li{
-float: left;
-margin: 0 30px;
-list-style: none;
-position: relative;
-
-}
-
-.main li a{
-line-height: 100px;
-text-decoration: none;
-color: #707070;
-font-size: 16px;
-font-weight: lighter;
-transition: all .4s;
-display: block,
-
--webkit-transition: all .4s;
--moz-transition: all .4s;
-}
-.restaurant__menu li a{
-color: rgba(255, 255, 255, 0.7);
-
-}
-.main li a:hover{
-color: #7FD3D3;
-}
-.main li a img{
-padding: 10px;
-}
-.sub{
-position: absolute;
-margin-left: -30px;
-float: left;
-max-height: 0;
-overflow: hidden;
-transition: all 0.7s;
-margin-top: -20px;
-
-}
-.menu_visible{
-max-height: 300px;
-}
-.sub li{
-
-
--webkit-transition: all .4s;
--moz-transition: all .4s;
-font-family: 'Open Sans', sans-serif;
-margin-left: 30px;
-
-
-
-}
-.sub li a{
-display: block;
-color: rgba(255, 255, 255, 0.7);
-height: 30px !important;
-line-height: 30px !important;
-font-size: 14px;
-min-width: 150px;
-left: 0;
-transition: all 0.5s;
-color: rgba(52, 89, 116, 0.7);
-margin-right: 10px;
-margin-top: 3px;
-margin-left: -10px;
-padding-left: 10px;
-}
-.sub li a:hover{
-background: rgba(52, 89, 116, 0.7);
-transform: translateX(10px) ;
-border-radius: 5px;
-
-}
-/*
-.header__menu li:hover ul{
-display: block;
-}*/
-
 .social_fixed{
   position: fixed;
-  right: 0;
-  top: 120px;
+  right: 10px;
+  top: 150px;
   background-color: #345974;
   z-index: 1;
   text-align: center;
+  border-radius: 5px;
+
 }
 .fix{
   padding: 10px;
@@ -257,7 +165,7 @@ display: block;
 h1{
   font-size: 100px;
   margin-left: 20%;
-  padding-top: 150px;
+  padding-top: 300px;
   text-transform: uppercase;
   font-weight: lighter;
   font-style: italic;
@@ -275,42 +183,36 @@ h1{
   color: rgba(112, 112, 112, 0.77);
 }
 #booking{
-  min-height: 150px;
-}
-.riquadro_prenotazioni,.prenotazioni_ristorante{
-  height: 90px;
-  background-color: #7FD3D3;
-  margin: -30px auto;
+  min-height: 100px;
 }
 .riquadro_prenotazioni{
-  width: 1170px;
+  height: 70px;
+  
+  background-color: #7FD3D3;
+  margin: 0px auto;
   position: relative;
+  border-radius: 5px;
+  transition: all 0.8s ease;
 }
-.prenotazioni_ristorante{
-  width: 700px;
+.stanze_albergo{
+  width: 900px;
 }
-.riquadro_prenotazioni input{
-  height: 40px;
-  width: 180px;
-  margin: 25px 26px;
-  font-family: 'Lato', sans-serif;
+#booking:hover .riquadro_prenotazioni{
+  margin: -30px auto;
+
+}
+.prenotazioni_input{
+  height: 30px;
+  width: 140px;
+  margin: 20px 30px;
   border: none;
-  color: #D4D4D4;
-  padding-left: 10px;
-  font-size: 15px;
-}
-.lista_hotel {
-  border: none;
-  height: 40px;
-  width: 180px;
-  margin: 25px;
+  border-radius: 3px;
   color: rgba(112, 112, 112, 0.77);
-  padding-left: 10px;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .riquadro_prenotazioni input[type="submit"]{
   float: right;
-  margin-left: 45px;
+  margin-left: 10px;
   margin-top: 0;
   height: 100%;
   background-color: #345974;
@@ -325,231 +227,209 @@ h1{
   padding: 0;
   border-radius: 5px;
   position: absolute;
+  width: 140px;
 }
-/*.riquadro_prenotazioni input[type="submit"]:hover{*/
+
 .cerca_moove{
   color: #7FD3D3;
   cursor: pointer;
   transform: translateX(15px);
 
 }
-/*.riquadro_prenotazioni input[type="number"]{
-background-color: #fff;
-color: #707070;
-background-image: url(../img/freccia_placeholder.png);
-background-repeat: no-repeat;
-background-position: right;
-}*/
-
-/*COPIATO SPUDORATAMENTE DALL'INTERNET ;-)*/
-input[type="date"]:before {
-  content: attr(placeholder) !important;
-  color: #aaa;
-  margin-right: 0.5em;
-}
-input[type="date"]:focus:before,
-input[type="date"]:valid:before {
-  content: "";
-}
-#booking_ristorante{
-  min-height: 150px;
-}
-.form_ristorante{
-  height: 40px;
-  width: 180px;
-  font-family: 'Lato', sans-serif;
-  float: left;
-}
-.form_ristorante input,.form_ristorante select{
-  height: 40px;
-  width: 180px;
-  border: 0;
-  font-family: 'Lato', sans-serif;
-  border: none;
-  color: #797979;
-  padding-left: 10px;
-  font-size: 15px;
-}
-.persone_ristorante, .data_ristorante{
-  margin-top: 26px;
-  margin-left: 53px;
-}
-.submit_ristorante {
-  height: 100%;
-  float: right;
-}
-.submit_ristorante input{
-  height: 90px;
-  background-color: #345974;
-  font-size: 25px;
-  font-weight: lighter;
-  color: #D4D4D4;
-  border: 0;
-  transition: all .4s;
-  -webkit-transition: all .4s;
-  -moz-transition: all .4s;
-  font-family: 'Open Sans', sans-serif;
-}
-.submit_ristorante input[type="submit"]:hover{
-  background-color: #fff;
-  color: #7FD3D3;
-  cursor: pointer;
-}
 #chef{
   min-height: 500px;
 }
-#resort{
-  min-height: 530px;
+.box_description{
+  /* min-height: 400px; */
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .riquadro_immagine, .riquadro_testo{
-  width: 50%;
+  width: 500px;
+  height: 370px;
+  border-radius: 5px;
+}
+.riquadro_testo {
+  
+  position: relative;
+  transition: all 0.7s ease;
+}
+.riquadro_testo_shadow{
+  -webkit-box-shadow: 0px 0px 36px -10px #000000;
+  -moz-box-shadow: 0px 0px 36px -10px #000000;
+  -o-box-shadow: 0px 0px 36px -10px #000000;
+  box-shadow: 0px 0px 36px -10px #000000;
+  transform: scale(1.005);
+}
+
+
+.dx{
+  float: right;
+  margin-right: 50px;
+}
+.sx{
   float: left;
-
+  margin-left: 50px;
 }
-
-.riquadro_immagine {
-  transition: all 0.8s cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
-  transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
-  max-width: 100%;
-  left: 130%;
-  overflow: hidden;
-  position: absolute;
-
-
-}
-.immagine_destra, .no_resort{
-  max-width: 100%;
-}
-.fascia_blu{
-  width: 50%;
-  height: 8px;
-  background-color: #7FD3D3;
-  margin-left: 60px;
-}
-.no_resort{
-  margin-top: 40px;
-}
-
 h2{
-  text-transform: uppercase;
   font-weight: lighter;
-  font-style: italic;
-  font-size: 45px;
-  margin-left: 60px;
-  padding: 20px 0; 
+  font-size: 40px;
+  margin-left: 40px;
+  padding-top: 20px; 
   font-family: 'Open Sans', sans-serif;
+  display: inline-block;
+}
+h2::after{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 0;
+  background: transparent;
+  transition: width 1s ease, background-color 1s ease;
+  border-radius: 5px;
+}
+.riquadro_testo:hover h2::after{
+  width: 100%;
+  background: #7FD3D3;
 }
 .riquadro_testo p{
-  margin: 30px 70px;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.1em;
-  text-align: justify;
+  margin: 30px 40px;
+  font-size: 16px;
+}
+.ancora_testo {
+  display:inline-block;
+  padding: 0 20px;
+  height: 40px;
+  min-width: 120px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 40px;
+  text-decoration: none;
+  position: relative;
+  color: #345974;
+  transition: all .6s ease;
+  -webkit-transition: all .6s ease;
+  -moz-transition: all .6s ease;   
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 7px;
+  border: 2px solid #345974;
+  float: right;
+  margin-right: 20px;
+}
+.ancora_testo::after{
+  font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f0da";
+  opacity: 0;
+  transition: all .4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s; 
+  position: absolute;
+  right: 8px;
+  top: 1px;
+}
+.ancora_testo:hover{
+  padding-right: 25px;
+  padding-left: 15px;
+  background-color: #345974;
+  color: #fff;
+}
+.ancora_testo:hover::after{
+  opacity: 1;
+  color: #fff;
+}
+
+.immagine_destra{
+  max-width: 100%;
+  border-radius: 5px;
 }
 .riquadro_testo ul{
-  margin: 20px 120px 40px 90px;
+  margin-left: 30px;
   font-family: 'Lato', sans-serif;
 }
 .riquadro_testo li{
-  font-size: 1.1em;
-  margin: 0 20px;
-  padding: 15px 0 15px 10px;
+  font-size: 16px;
+  margin: 15px 20px;
+  list-style-position: inside;
   list-style-image: url(../img/punto_lista_blu.png);
 }
-.ancora_testo{
-  display:inline-block;
-  margin: 30px 60px 20px;
-  padding: 0 20px;
-  height: 60px;
-  min-width: 150px;
-  text-align: center;
-  font-size: 20px;
-  line-height: 60px;
-  text-decoration: none;
-  background-color: #345974;
-  color: rgba(255, 255, 255, 0.78);
-  transition: all .4s;
-  -webkit-transition: all .4s;
-  -moz-transition: all .4s;   
-  font-family: 'Open Sans', sans-serif;
-  bottom: 0;
-
-}
-.ancora_testo:hover{
-  background-color: #7FD3D3;
-  transform: translateX(20px);
-  border-radius: 6px;
-}
-.r_s{
-  float: right;
-}
-.lato_destro img{
-  float: right;
-}
-
 #chef_passione{
   min-height: 600px;
   padding-top: 80px;
 }
-
-
-
-
-
-
 .slide{
-  height: 650px;
-}
-.slider_desktop{
+  height: 500px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   position: relative;
+  overflow: hidden;
 }
 .one{
   background-image: url(../img/gnocca_pool.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  position: relative;
+  
 }
 .riquadro_blu {
-  width: 450px;
-  height: 750px;
-  margin-top: -50px;
+  width: 350px;
+  height: 450px;
+  margin-top:25px;
   background-color: #7FD3D3; 
   position: absolute;
   color: rgba(255, 255, 255, 0.78);
   font-family: 'Open Sans', sans-serif;
-}
-.dx{
-  left: 100%;
-  margin-left: -450px;
-}
+  border-radius: 5px;
+  transition: all 1s;
+  display: table;
 
+
+}
+.rbd{
+  transform: translateX(-100%);
+}
+.rbs{
+  right: 0;
+  transform: translateX(100%);
+}
+.slide_out_rbd{
+  transform: translateX(120vh);
+  
+}
+.slide_out_rbs{
+  transform: translateX(-120vh); 
+}
+.riquadro_blu_testo{
+  height: 450px;
+  width: 350px;
+  display: table;
+  transform: translateY(-100vh);
+  transition: all 1.5s ease;
+  
+
+}
 h3{
   text-transform: uppercase;
   font-weight: lighter;
   font-style: italic;
-  font-size: 45px;
+  font-size: 30px;
+  display: table-cell;
+  vertical-align: middle;
+  transition: all 0.5s ease;
+  
+
+}
+.slide_out_title{
+  transform: translateY(0vh);
 }
 .riquadro_blu h3{
   padding: 0 85px;
 }
-.riquadro_blu img{
-  margin-top: 35%;
-  margin-left: 50px;
-}
-#rooms{
-  min-height: 630px;
-  padding-top: 50px;
-}
+
+
 .two{
-  position: relative;
   background-image: url(../img/sauna.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-#wellness{
-  min-height: 630px;
-  padding-top: 50px;
 }
 
 .vertical{
@@ -558,22 +438,18 @@ h3{
   position: relative;
 }
 .sky{
-  width: 48%;
+  width: 50%;
+  float: left;
 }
 .sky img{
   max-width: 100%;
 }
-.pool{
+/* .pool{
   float: left;
 }
 .resort{
   float: right;
-}
-#escursioni{
-  min-height: 630px;
-  padding-top: 50px;
-}
-
+} */
 .three{
   position: relative;
   background-image: url(../img/chef.png);
@@ -581,32 +457,19 @@ h3{
   background-position: center;
   background-size: cover;
 }
-#cucina_benessere{
-  min-height: 650px;
-  padding-top: 50px;
-
-}
 .cucina h3{
-  font-size: 40px;
+  font-size: 30px;
 }
 .cucina img{
   margin-top: 24%;
 }
-.tris{
-  max-width: 100%;
-  left: 130%;
-  overflow: hidden;
-  position: absolute;
-  transition: all 0.7s cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
 
-  transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
-
-}
 .riquadro_immagine_show{
   left: 50%;
 }
-.tris img{
-  margin-left: 5px;
+.tris{
+  border-radius: 5px;
+
 }
 .four{
   position: relative;
@@ -617,54 +480,59 @@ h3{
 
 }
 .testimonianze_contenitore{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
-  width: 70%;
-  margin-left: 60px;
-  /*border: 1px solid black; */
+  width: 200px;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  margin: 0 auto;
+  
 }
-.testimonianze img{
-  margin-top: 100px;
-}
-.testimonianze_contenitore img, .testimonianze_contenitore p{
-  float: left;
-}
+
 .testimonianze_contenitore p{
-  width: 60%;
-  margin-top: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding: 0 60px;
+  
 }
 .testimonianze_contenitore img{
-  margin: 0 20px;
+  display: block;
+  margin: 0 auto 20px;
 }
 .testimonianze_contenitore span{
   color: rgba(255, 255, 255, 0.78);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+.testimonianze_contenitore span::after{
+  content: '';
+  height: 4px;
+  width:40px;
+  border-radius:2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  margin-left: -20px;
+  transition: all 0.5s ease;
 }
 .points{
+  bottom: 20px;
+  font-size: 10px;
+  left: 50%;
   text-align: center;
-  position: absolute;
-  width: 100%;
-  top: 65%;
+  margin-top: 30px;
 }
 .points a {
   color: rgba(112, 112, 112, 0.77);
 }
 .points a:hover{
   color: rgba(255, 255, 255, 0.78);
-}
-.testimonianze_social{
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  top: 80%;
-}
-.testimonianze_social a{
-  color: #fff;
-  font-size: 35px;
-  margin: 0 15px;
-}
-#events {
-  min-height: 630px;
-  padding-top: 50px;
 }
 .five{
   position: relative;
@@ -673,142 +541,154 @@ h3{
   background-position: center;
   background-size: cover;
 }
-
-
-.modulo img{
-  margin-top: 150px;
-
+.newsletter_contenitore{
+  display: table-cell;
+  vertical-align: middle;
 }
-.newsletter_text{
-  font-family: 'Lato', sans-serif;
-  font-size: 1.1em;
-  padding: 40px 85px;
+.newsletter_title{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.newsletter_title::after{
+  content: '';
+  display: block;
+  margin-bottom: 40px;
+  height: 5px;
+  width: 0;
+  background: transparent;
+  transition: width 1s ease, background-color 1s ease;
+  border-radius: 5px;
+}
+.riquadro_blu_testo:hover .newsletter_title::after{
+  width: 100%;
+  background: #345974;
+}
 
+.newsletter_text{
+  margin-left: 40px;
+  
 }
 .newsletter_form{
-
-  margin-top: 20px;
+  width: 80%;
+  margin: 0 auto;
+  
 }
 .newsletter_form input{
-  height: 40px;
-  width: 50%;
-  padding-left: 10px;
-  font-family: 'Lato', sans-serif;
+  width: 90%;
+  margin-top: 20px;
+  height: 30px;
+  border-radius: 3px;
   border: none;
-  color: #D4D4D4;
-  font-size: 1.1em;
-  margin-left: 85px;
+  padding: 0 5%;
 
 }
 .newsletter_form input[type="submit"]{
-  width: 40%;
-  margin: 60px 50% ;
-  padding: 0;
+  width: 100%;
+  height: 40px;
   transition: all .4s;
   -webkit-transition: all .4s;
   -moz-transition: all .4s;
   background-color: #345974;
+  border-radius: 5px;
+  color: #fff;
 }
 .newsletter_form input[type="submit"]:hover{
   background-color: #fff;
   color: #7FD3D3;
   cursor: pointer;
-}
-.follow_us{
-  max-height:  height: 250px;
+} 
 
+
+.follow_us{
+  max-height: 90px;
   text-align: center;
 }
 
 .follo_us_social{
-  width: 40%;
-  margin: 0 auto;
+  width: 400px;
+  margin: 0 auto 20px;
 }
 .follow_us_social_icon{
-
   color: #345974;
-  font-size: 50px;
-  margin: 100px 20px;
-  transition: all .4s;
-  -webkit-transition: all .4s;
-  -moz-transition: all .4s;
+  font-size: 40px;
+  margin: 20px 20px;
+  transition: all .6s;
+  -webkit-transition: all .6s;
+  -moz-transition: all .6s;
   display: block;
-  height: 60px;
+  height: 50px;
   float: left;
-  line-height: 60px;
-  width: 60px;
+  line-height: 50px;
+  width: 50px;
   padding: 5px;
-
-
-
 }
-.follow_us_social_icon:hover{
+.follo_us_social:hover .follow_us_social_icon {
   color: #fff;
   background-color: #7FD3D3;
-  transform: translateX(-10px) translateY(10px);
+  transform: translateX(-10px) translateY(-10px);
   border-radius: 6px;
 }
 
 footer{
-  height: 630px;
-  background-color: #7FD3D3;
   position: relative;
-  margin-bottom: 100px;
 }
 
 iframe{
   width: 100%;
 }
 #contenitore_contatti{
-  width: 450px;
-  height: 750px;
-  background-color: #7FD3D3;
   position: absolute;
-  left: 100%;
-  margin-left: -450px;
-  margin-top: -50px;
   color: rgba(255, 255, 255, 0.78);
+
 }
-#contenitore_contatti h2{
-  margin-left: 85px;
+.contenitore_contatti_paragrafo h2{
+  margin-top: -40px;
+}
+.contenitore_contatti_paragrafo h2::after{
+  content: '';
+  display: block;
   margin-bottom: 40px;
+  height: 5px;
+  width: 0;
+  background: transparent;
+  transition: width 1s ease, background-color 1s ease;
+  border-radius: 5px;
 }
-#contenitore_contatti img{
+#contenitore_contatti:hover .contenitore_contatti_paragrafo h2::after{
+  width: 100%;
+  background: #345974;
+}
+.contenitore_contatti_paragrafo img{
   margin-left: 30px;
   margin-top: 40px;
 }
-#contenitore_contatti p{
+.contenitore_contatti_paragrafo p{
   margin-left: 85px;
   font-size: 1.1em;
   margin-bottom: 50px;
-  font-family: 'Lato', sans-serif;
+
 }
-#contenitore_contatti li{
-  padding-top: 20px;
-  margin-left: 140px;
-  font-size: 1.1em;
-  height: 80px; 
-  padding: 20px;
-  font-family: 'Lato', sans-serif;
+.contenitore_contatti_paragrafo ul{
+  width: 300px;
+  margin: auto;
 }
-#contenitore_contatti li a{
+.contenitore_contatti_paragrafo li{
+  margin: 0 50px 20px;
+
+}
+.contenitore_contatti_paragrafo li a{
   color: rgba(255, 255, 255, 0.78);
   text-decoration: none;
   transition: all .4s;
   -webkit-transition: all .4s;
   -moz-transition: all .4s;
 }
-#contenitore_contatti li a:hover{
+.contenitore_contatti_paragrafo li a:hover{
   color: #345974;
 }
-.mail{
-  list-style-image: url(../img/mail.png);
-}
-.tel{
-  list-style-image: url(../img/tel.png);
-}
-.address{
-  list-style-image: url(../img/posizione.png);
+.contenitore_contatti_paragrafo{
+  display: table-cell;
+  vertical-align: middle;
 }
 #copyright{
   min-height: 80px;
@@ -825,33 +705,74 @@ iframe{
 .copy p:first-child{
   margin-right: 200px;
 }
+/*fine index html*/
+.fascia_cucina{
+  margin-top: 50px;
+}
+
+.restaurant__slide{
+  background-image: url(../img/acquario.webp);
+}
+.restaurant__slide h1, .restaurant__slide p {
+  color: #fff;
+}
+.tavolo_ristorante{
+  width: 500px;
+}
 .riquadro_scacco{
-  width: 50%;
-  height: 600px;
+  width: 33.33%;
+  height: 500px;
   float: left;
+  display: table;
 }
 .immagine_scacco{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
 }
+.immagine_scacco::after{
+  content: '';
+  background-color: #7fd3d380;
+  height: 100% ;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
 .pennette{
   background-image: url(../img/pennette.png);
+}
+.pizza{
+  background-image: url(../img/pizza.jpg);
 }
 .vegan{
   background-image: url(../img/vegetariana2.png);
 }
+.vegan2{
+  background-image: url(../img/vegan4.jpg);
+}
 .sushi2{
   background-image: url(../img/sushu2.png);
+}
+.sushi3{
+  background-image: url(../img/sushi3.jpg);
 }
 .colazione{
   background-image: url(../img/colazione.png);
 }
+.colazione2{
+  background-image: url(../img/cappuccino.jpg);
+}
 .paragrafo_scacco{
   min-width: 70%;
-  height: 100%;
-  margin: 0 auto 20px;
+  font-family: 'Open Sans', sans-serif;
+height: 100%;
+  margin: 0 auto;
   position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  
 }
 .paragrafo_scacco a{
   text-decoration: none;
@@ -860,75 +781,63 @@ iframe{
   content:attr(title);
   position: absolute;
   min-width: 150px;
-  height: 60px;
+  height: 40px;
   background-color: #345974;
   padding: 0 20px;
   text-align: center;
-  line-height: 60px;
+  line-height: 40px;
   font-family: 'Open Sans', sans-serif;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.78);
   text-transform: uppercase;
-  left: 60px;
-  bottom: 90px;
+  right:30px;
+  bottom: 20px;
   transition: 0.5s;
-}
-.sfuma_sx a::after{
-  left: 100%;
-  margin-left: -240px;
+  border-radius: 5px;
+  
 }
 .paragrafo_scacco a:hover::after{
   background-color: #7FD3D3;
 }
+
 .immagine_scacco {
-  position: relative;
   z-index: 0.5;
 }
-.paragrafo_scacco a::before{
-  content: "";
-  height: 100%;
-  width: 0;
-  position: absolute;
-  bottom: 40px;
-  transition: 0.5s;
-}
-.sfuma_sx a::before{
-  background: rgb(127,211,211);
-  background: linear-gradient(90deg, rgba(127,211,211,1) 0%, rgba(0,212,255,0) 100%);
-  left: -10%;
-  z-index:-1;
-}
-.sfuma_dx a::before{
-  background: rgb(127,211,211);
-  background: linear-gradient(270deg, rgba(127,211,211,1) 0%, rgba(0,212,255,0) 100%);
-  right: -10%;
-}
-.paragrafo_scacco a:hover::before{
-  width: 50%;
+.paragrafo_scacco h2{
+  color: #7FD3D3;
+  margin: 0;
+  padding-left: 30px;
+  position: relative;
 }
 
+
 .paragrafo_scacco p{
-  margin: 30px 60px;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.1em;
-  text-align: justify;
-  color: rgba(112, 112, 112, 0.77);
-  padding: 50px 0;
-}
-.paragrafo_scacco h2{
+  padding: 30px;
+  font-size: 16px;
   color: rgba(112, 112, 112, 0.77);
 }
-.spazio_scacchi{
-  margin-top: 40px;
-}
+
 .sale_restaurant{
-  width: 48%;
+  width: 40%;
   height: 575px;
-  font-family: 'Lato', sans-serif;
-  font-size: 1.1em;
-  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
   color: rgba(112, 112, 112, 0.77);
-  padding: 10px;
+  
+  float: left;
+  width: 50%;
+  display: table;
+}
+.incastro{
+  position: absolute;
+  bottom: 0;
+}
+.testo_sala{
+  display: table-cell;
+  vertical-align: middle;
+  width: 80%;
+  height: 80%;
+  margin: 0 auto;
 }
 .testo_sala{
   width: 80%;
@@ -960,10 +869,6 @@ position: absolute;
 }*/
 /******inizio stile stanze.html******/
 
-#dettagli, #relax{
-  min-height: 500px;
-  padding-top: 50px;
-}
 
 
 .stanze__slide{
@@ -972,14 +877,24 @@ position: absolute;
 .stanze__slide h1, .stanze__slide p, .wellness__slide h1, .wellness__slide p{
   color: #fff;
 }
-.camera_uno{
+.camera_suite1{
   background-image: url(../img/suite.jpg);
 }
-.camera_due{
+.camera_suite2{
+  background-image: url(../img/suite2.jpg);
+}
+
+.camera_superior1{
   background-image: url(../img/vasca_suite.jpg);
 }
-.camera_tre{
+.camera_superior2{
+  background-image: url(../img/superior2.jpg);
+}
+.camera_classic1{
   background-image: url(../img/stanza_classic.jpg);
+}
+.camera_classic2{
+  background-image: url(../img/classic2.jpg);
 }
 .vasca_gnocca{
   background-image: url(../img/gnocca_vasca.jpg);
@@ -989,17 +904,32 @@ position: absolute;
 .wellness__slide{
   background-image: url(../img/sassi.jpg);
 }
-.trat_uno{
+.trat_turco1{
   background-image: url(../img/bagno_turco.jpg);
 }
-.trat_due{
+.trat_turco2{
+  background-image: url(../img/bagnoturco2.jpg);
+  background-position:0 0;
+}
+.trat_sauna1{
   background-image: url(../img/sauna2.jpg);
 }
-.trat_tre{
+.trat_sauna2{
+  background-image: url(../img/sauna3.jpg);
+  background-position:0 0;
+}
+.trat_idro1{
   background-image: url(../img/idromassaggio.jpg);
 }
-.trat_quattro{
+.trat_idro2{
+  background-image: url(../img/idro2.jpg);
+}
+.trat_well_room1{
   background-image: url(../img/vasca_personale.jpg);
+}
+.trat_well_room2{
+  background-image: url(../img/wellnessroom2.jpg);
+  
 }
 .tipa_sudata{
   background-image: url(../img/gnocca_sudata.jpg);

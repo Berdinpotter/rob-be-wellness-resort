@@ -1,272 +1,365 @@
 <!doctype html>
 <html lang="it">
 
-  <head>
-    <meta charset="utf-8">
-    <title>Rob.Beach.Wellness Resort</title>
-    <meta name="description" content="Rob.Beach.Restaurant">
-    <meta name="author" content="Marco Berdin">
-    <meta name="copyrigth" content="Marco Berdin Enterprise - 2020">
-    <meta name="keywords" content="html, css3">
-    <link rel="icon" href="img/favicon.png" type="img/ico">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/23f094b93c.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script>
-      $('document').ready(function(){
-        
-        $('.main li').hover(function(){
-          $(this).contents('.sub').toggleClass('menu_visible');
-        });
-        
-        $('.riquadro_prenotazioni input[type="submit"]').hover(function(){
-          $(this).toggleClass('cerca_moove');
-        });
-        
-        //$('.riquadro_testo').hover(function(){
-          //$(this).next('.tris').toggleClass('tris_show');
-          
-        //});
-        
-        $('.contenitore').hover(function(){
-          $(this).contents('.riquadro_immagine').addClass('riquadro_immagine_show');
-        
-        });
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      })
-      
-      
-    
-    </script>
-  </head>
-  <body>
-    <div id="slide_principal" class="stanze__slide">
-      <div class="social_fixed">
-        <a href="index.html" title="Torna alla Home">
-          <img src="img/logo_social.png" alt="Torna alla home" height="17" width="17">
-        </a>
-        <a href="#" title="Instagram"><i class="fab fa-instagram fix"></i></a>
-        <a href="#" title="Facebook"><i class="fab fa-facebook-f fix"></i></a>
-        <a href="#" title="Tik Tok"><i class="fab fa-tiktok fix"></i></a>
-        <a href="#" title="Whatsapp"><i class="fab fa-whatsapp fix"></i></a>
-      </div>
+<head>
+  <meta charset="utf-8">
+  <title>Rob.Beach.Wellness Resort</title>
+  <meta name="description" content="Rob.Beach.Restaurant">
+  <meta name="author" content="Marco Berdin">
+  <meta name="copyrigth" content="Marco Berdin Enterprise - 2020">
+  <meta name="keywords" content="html, css3">
+  <link rel="icon" href="img/favicon.png" type="img/ico">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/23f094b93c.js" crossorigin="anonymous"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300;1,400&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+    rel="stylesheet">
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script>
+    $('document').ready(function () {
 
-      <nav class="main_menu clearfix">
-          <ul class="main">
-            <li><a class="main_ancore" href="#" >storia</a></li>
-            <li><a class="main_ancore" href="#">wellness <span><i class="fas fa-angle-down"></i></span></a>
-              <ul class="sub">
-                <li><a class="sub_ancore" href="#" title="piscina termale">piscina termale</a>
-                <li><a class="sub_ancore" href="#" title="bagno turco">bagno turco</a>
-                <li><a class="sub_ancore" href="#" title="saune">saune</a>
-                <li><a class="sub_ancore" href="#" title="area massaggi">area massaggi</a>
-                <li><a class="sub_ancore" href="#" title="palestra">palestra</a>
-                <li><a class="sub_ancore" href="#" title="percorsi benessere">percorsi benessere</a>
-              </ul>
-            </li>
-            <li><a class="main_ancore" href="#">struttura <span><i class="fas fa-angle-down"></i></span></a>
-              <ul class="sub">
-                <li><a class="sub_ancore" href="stanze.html" title="stanze">stanze</a>
-                <li><a class="sub_ancore" href="#" title="piscina e impianti sportivi">piscina</a>
-                <li><a class="sub_ancore" href="#" title="area meeting">area meeting</a>
-                <li><a class="sub_ancore" href="ristorante.html" title="ristorante">ristorante</a>
-              </ul>
-            </li>
-            <li><a class="main_ancore" href="#"><img src="img/RBWR_grey.png" alt="Rob.beach Logo" height="100" width="100"></a></li>
-            <li><a class="main_ancore" href="#">outdoor <span><i class="fas fa-angle-down"></i></span></a>
-              <ul class="sub">
-                <li><a class="sub_ancore" href="#" title="Area Wellness">A cavallo</a>
-                <li><a class="sub_ancore" href="#" title="Area Wellness">In barca</a>
-                <li><a class="sub_ancore" href="#" title="Area Wellness">Visite guidate</a>
-                </li>
-              </ul>
-            </li>
-            <li><a class="main_ancore" href="#">servizi <span><i class="fas fa-angle-down"></i></span></a>
-              <ul class="sub">
-                <li><a class="sub_ancore" href="#" title="Area Wellness">promozioni</a>
-                <li><a class="sub_ancore" href="#" title="Area Wellness">navetta</a>
-                <li><a class="sub_ancore" href="#" title="Area Wellness">meeting</a>
-                </li>
-                <li><a class="sub_ancore" href="#" title="Area Wellness">catering</a>
-                </li>
-              </ul>
-            </li>
-            <li><a class="main_ancore" href="#">contatti</a></li>
-          </ul>
-        </nav>
+      $('.main li').hover(function () {
+        $(this).contents('.sub').toggleClass('menu_visible');
+      });
+
+      $('.riquadro_prenotazioni input[type="submit"]').hover(function () {
+        $(this).toggleClass('cerca_moove');
+      });
+
+
+      $('.contenitore').hover(function () {
+        $(this).contents('.riquadro_testo').toggleClass('riquadro_testo_shadow');
+      });
+      $('.slide').mouseover(function () {
+        $(this).contents('.rbd').addClass('slide_out_rbd');
+      });
+      $('.slide').mouseover(function () {
+        $(this).contents('.rbs').addClass('slide_out_rbs');
+      });
+      $('.slide').mouseover(function () {
+        $(this).find('.riquadro_blu_testo').addClass('slide_out_title');
+      });
+
+      $('.main_ancore').hover(function (event) {
+        $(this).toggleClass('main_ancore_background');
+      });
+      $('.sub').hover(function (event) {
+        $(this).prev().toggleClass('main_ancore_background');
+      });
+      /* $('.wave_burger').click(function (event) {
+        $('.main_menu').toggleClass('out');
+      });
+ */
+
+
+
+
+
+
+
+
+
+
+    })
+
+
+
+  </script>
+</head>
+
+<body>
+  <header id="slide_principal" class="stanze__slide">
+    <div class="social_fixed">
+      <a class="wave_burger" href="#" title="Torna alla Home">
+        <img src="img/menu.png" alt="Torna alla home" height="17" width="17">
+      </a>
+      <a href="#" title="Instagram"><i class="fab fa-instagram fix"></i></a>
+      <a href="#" title="Facebook"><i class="fab fa-facebook-f fix"></i></a>
+      <a href="#" title="Tik Tok"><i class="fab fa-tiktok fix"></i></a>
+      <a href="#" title="Whatsapp"><i class="fab fa-whatsapp fix"></i></a>
+    </div>
+    <div class="contenitore">
+      <nav class="main_menu clearfix sfondo">
+        <ul class="main">
+          <li><a class="main_ancore stanze" href="#">storia</a></li>
+          <li><a class="main_ancore stanze" href="#">wellness <span><i class="fas fa-angle-down"></i></span></a>
+            <ul class="sub">
+              <li><a class="sub_ancore" href="#" title="piscina termale">piscina termale</a>
+              <li><a class="sub_ancore" href="#" title="bagno turco">bagno turco</a>
+              <li><a class="sub_ancore" href="#" title="saune">saune</a>
+              <li><a class="sub_ancore" href="#" title="area massaggi">area massaggi</a>
+              <li><a class="sub_ancore" href="#" title="palestra">palestra</a>
+              <li><a class="sub_ancore" href="#" title="percorsi benessere">percorsi benessere</a>
+            </ul>
+          </li>
+          <li><a class="main_ancore stanze" href="#">struttura <span><i class="fas fa-angle-down"></i></span></a>
+            <ul class="sub">
+              <li><a class="sub_ancore" href="stanze.html" title="stanze">stanze</a>
+              <li><a class="sub_ancore" href="#" title="piscina e impianti sportivi">piscina</a>
+              <li><a class="sub_ancore" href="#" title="area meeting">area meeting</a>
+              <li><a class="sub_ancore" href="ristorante.html" title="ristorante">ristorante</a>
+            </ul>
+          </li>
+          <li><a href="index.html"><img src="img/RBWR_grey.png" alt="Rob.beach Logo" height="100" width="100"></a></li>
+          <li><a class="main_ancore stanze" href="#">outdoor <span><i class="fas fa-angle-down"></i></span></a>
+            <ul class="sub">
+              <li><a class="sub_ancore" href="#" title="Area Wellness">A cavallo</a>
+              <li><a class="sub_ancore" href="#" title="Area Wellness">In barca</a>
+              <li><a class="sub_ancore" href="#" title="Area Wellness">Visite guidate</a>
+              </li>
+            </ul>
+          </li>
+          <li><a class="main_ancore stanze" href="#">servizi <span><i class="fas fa-angle-down"></i></span></a>
+            <ul class="sub">
+              <li><a class="sub_ancore" href="#" title="Area Wellness">promozioni</a>
+              <li><a class="sub_ancore" href="#" title="Area Wellness">navetta</a>
+              <li><a class="sub_ancore" href="#" title="Area Wellness">meeting</a>
+              </li>
+              <li><a class="sub_ancore" href="#" title="Area Wellness">catering</a>
+              </li>
+            </ul>
+          </li>
+          <li><a class="main_ancore stanze" href="#">contatti</a></li>
+        </ul>
+      </nav>
       <h1>suites&amp;rooms</h1>
       <p>Stile&amp;Relax</p>
     </div>
-    <div id="booking">
-      <div class="riquadro_prenotazioni">
-        <form action="invio dati.php" method="post">
-          <p class="riquadro_prenotazioni">
-            <input type="date" name="Check_in" placeholder="Check in...">
-            <input type="date" name="Check_out" placeholder="Check out...">
-            <select class="lista_hotel" name="gruppo_adulti" id="gruppo_adulti">
-              <option value="1">1 adulto</option>
-              <option value="2" selected>2 adulti</option>
-              <option value="3">3 adulti</option>
-              <option value="4">4 adulti</option>
-              <option value="5">5 adulti</option>
-              <option value="6">6 adulti</option>
-              <option value="7">7 adulti</option>
-              <option value="8">8 adulti</option>
-              <option value="9">9 adultio</option>
-              <option value="10">10 adulti</option>
-            </select>
-            <select class="lista_hotel" name="gruppo_bambini" id="gruppo_bambini">
-              <option value="1" selected>1 bambino</option>
-              <option value="2">2 bambini</option>
-              <option value="3">3 bambini</option>
-              <option value="4">4 bambini</option>
-              <option value="5">5 bambini</option>
-              <option value="6">6 bambini</option>
-              <option value="7">7 bambini</option>
-              <option value="8">8 bambini</option>
-              <option value="9">9 bambini</option>
-              <option value="10">10 bambini</option>
-            </select>
-            <input type="submit" value="Cerca">
+  </header>
+  <div id="booking" class="clearfix">
+    <div class="riquadro_prenotazioni stanze_albergo">
+      <form action="invio dati.php" method="post">
+        <p>
+          <input class="prenotazioni_input" type="date" name="Check_in" placeholder="Check in...">
+          <input class="prenotazioni_input" type="date" name="Check_out" placeholder="Check out...">
+          <select class="prenotazioni_input lista_hotel" name="gruppo_adulti" id="gruppo_adulti">
+            <option value="1">1 adulto</option>
+            <option value="2" selected>2 adulti</option>
+            <option value="3">3 adulti</option>
+            <option value="4">4 adulti</option>
+            <option value="5">5 adulti</option>
+            <option value="6">6 adulti</option>
+            <option value="7">7 adulti</option>
+            <option value="8">8 adulti</option>
+            <option value="9">9 adultio</option>
+            <option value="10">10 adulti</option>
+          </select>
+          <select class="prenotazioni_input lista_hotel" name="gruppo_bambini" id="gruppo_bambini">
+            <option value="1" selected>1 bambino</option>
+            <option value="2">2 bambini</option>
+            <option value="3">3 bambini</option>
+            <option value="4">4 bambini</option>
+            <option value="5">5 bambini</option>
+            <option value="6">6 bambini</option>
+            <option value="7">7 bambini</option>
+            <option value="8">8 bambini</option>
+            <option value="9">9 bambini</option>
+            <option value="10">10 bambini</option>
+          </select>
+          <input type="submit" value="Cerca">
+        </p>
+      </form>
+    </div>
+  </div>
+  <!-- inizio relax -->
+  <section class="box_description">
+    <div class="contenitore clearfix">
+      <article class="riquadro_testo sx">
+        <h2>Un Relax di Classe</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dignissimos laudantium tenetur, possimus
+          sint necessitatibus eius repellendus similique voluptatibus!</p>
+        <p>Maxime, beatae deserunt blanditiis voluptas voluptates reiciendis repellendus impedit unde natus, ea
+          obcaecati!</p>
+      </article>
+      <figure class="riquadro_immagine dx">
+        <img class="immagine_destra" src="img/baldacchino.jpg" alt="letto a baldacchino">
+      </figure>
+    </div>
+  </section>
+  <!-- inizio dettagli -->
+
+  <section class="box_description">
+    <div class="contenitore clearfix">
+      <figure class="riquadro_immagine sx">
+        <img class="immagine_destra" src="img/specchi.jpg" alt="Specchi">
+      </figure>
+      <article class="riquadro_testo dx">
+        <h2>Attenzione <br>nei dettagli</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dignissimos laudantium tenetur, possimus
+          sint necessitatibus eius repellendus similique voluptatibus! Maxime, beatae deserunt blanditiis voluptas
+          voluptates reiciendis repellendus impedit unde natus, ea obcaecati!</p>
+      </article>
+    </div>
+  </section>
+  <!-- inizio fascia cucina -->
+  <div class="fascia_cucina clearfix">
+    <section class="riquadro_scacco testo_scacco">
+      <article class="paragrafo_scacco sfuma_dx">
+        <a href="#" title="Entra">
+          <div class="fascia_blu spazio_scacchi"></div>
+          <h2>Suite</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dignissimos laudantium tenetur,
+            possimus sint necessitatibus eius repellendus similique voluptatibus!
+            Maxime, beatae deserunt blanditiis voluptas voluptates reiciendis repellendus impedit unde natus, ea
+            obcaecati!</p>
+
+        </a>
+      </article>
+    </section>
+    <figure class="riquadro_scacco immagine_scacco camera_suite1">
+
+    </figure>
+    <figure class="riquadro_scacco immagine_scacco camera_suite2">
+
+    </figure>
+    <figure class="riquadro_scacco immagine_scacco camera_superior1">
+
+    </figure>
+    <figure class="riquadro_scacco immagine_scacco camera_superior2">
+
+    </figure>
+    <section class="riquadro_scacco testo_scacco">
+      <article class="paragrafo_scacco sfuma_sx">
+        <a href="#" title="Entra">
+          <div class="fascia_blu spazio_scacchi"></div>
+          <h2>Superior</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dignissimos laudantium tenetur,
+            possimus sint necessitatibus eius repellendus similique voluptatibus!
+            Maxime, beatae deserunt blanditiis!</p>
+        </a>
+      </article>
+    </section>
+    
+    <figure class="riquadro_scacco immagine_scacco camera_classic1">
+    </figure>
+    <section class="riquadro_scacco testo_scacco">
+      <article class="paragrafo_scacco sfuma_dx">
+        <a href="#" title="Entra">
+          <div class="fascia_blu spazio_scacchi"></div>
+          <h2>Classic</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dignissimos laudantium tenetur,
+            possimus sint necessitatibus eius repellendus similique voluptatibus!
+            Maxime, beatae deserunt blanditiis!</p>
+        </a>
+      </article>
+    </section>
+    <figure class="riquadro_scacco immagine_scacco camera_classic2">
+    </figure>
+
+  </div>
+  <div class="vertical clearfix">
+    <figure>
+      <img class="sky pool" src="img/pianta.jpg" alt="Piscina dall'alto">
+    </figure>
+    <article class="riquadro_testo sale_restaurant">
+      <div class="testo_sala">
+        <div class="fascia_blu no_resort sala"></div>
+        <h2>Nel segno dell'eleganza</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dignissimos laudantium tenetur, possimus
+          sint necessitatibus eius repellendus similique voluptatibus! Maxime, beatae deserunt !</p>
+      </div>
+    </article>
+    <figure>
+      <img class="sky resort" src="img/specchio.jpg" alt="Piscina dall'alto">
+      <article class="riquadro_testo sale_restaurant incastro">
+        <div class="testo_sala">
+          <div class="fascia_blu no_resort sala"></div>
+          <h2>Comfort contemporaneo</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dignissimos laudantium tenetur,
+            possimus sint necessitatibus eius repellendus similique voluptatibus! Maxime, beatae deserunt !</p>
+        </div>
+      </article>
+    </figure>
+  </div>
+  <!--   <div class="slide vasca_gnocca">
+    <div class="contenitore slider_desktop">
+
+      <div class="riquadro_blu sx modulo">
+        <img src="img/virgolette.png" alt="Virgolette" height="42" width="49">
+        <h3>newsletter</h3>
+        <p class="newsletter_text">Iscriviti alla nostra Newsletter per non perdere offerte, eventi e novità.</p>
+        <form class="newsletter_form" action="invio_dati.php" method="post">
+          <p>
+            <input type="email" name="Email_for" placeholder="email">
+            <input type="submit" value="Iscriviti!">
           </p>
         </form>
       </div>
     </div>
-    <section id="relax">
-      <div class="contenitore">
-        <article class="riquadro_testo">
-          <div class="fascia_blu"></div>
-          <h2>Un Relax di Classe</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dignissimos laudantium tenetur, possimus sint necessitatibus eius repellendus similique voluptatibus!</p>
-          <p>Maxime, beatae deserunt blanditiis voluptas voluptates reiciendis repellendus impedit unde natus, ea obcaecati!</p>
-        </article>
-        <figure class="riquadro_immagine lato_destro chef_tony" title="Chef Tony">
-          <img class="immagine_destra" src="img/baldacchino.jpg" alt="Resort sunset">
-        </figure>
+  </div>
+  <div class="follow_us">
+    <div class="contenitore clearfix">
+      <div class="follo_us_social">
+        <a class="follow_us_social_icon" href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a class="follow_us_social_icon" href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a class="follow_us_social_icon" href="#" title="Tik Tok"><i class="fab fa-tiktok"></i></a>
+        <a class="follow_us_social_icon" href="#" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
       </div>
-    </section>
-    <section id="dettagli">
-      <div class="contenitore">
-        <figure class="riquadro_immagine">
-          <img class="no_resort" src="img/specchi.jpg" alt="Resort sunset">
-        </figure>
-        <article class="riquadro_testo sale_restaurant">
-
-          <div class="fascia_blu no_resort"></div>
-          <h2>attenzione <br>nei dettagli</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dignissimos laudantium tenetur, possimus sint necessitatibus eius repellendus similique voluptatibus! Maxime, beatae deserunt blanditiis voluptas voluptates reiciendis repellendus impedit unde natus, ea obcaecati!</p>
-
-        </article>
-      </div>
-    </section>
-
-    <div class="fascia_cucina clearfix">
-      <section class="riquadro_scacco testo_scacco">
-        <article class="paragrafo_scacco sfuma_dx">
-          <a href="#" title="Entra">
-          <div class="fascia_blu spazio_scacchi"></div>
-          <h2>suite</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dignissimos laudantium tenetur, possimus sint necessitatibus eius repellendus similique voluptatibus!
-            Maxime, beatae deserunt blanditiis voluptas voluptates reiciendis repellendus impedit unde natus, ea obcaecati!</p>
-          
-          </a>
-        </article>
-      </section>
-      <figure class="riquadro_scacco immagine_scacco camera_uno">
-
-      </figure>
-      <figure class="riquadro_scacco immagine_scacco camera_due">
-
-      </figure>
-      <section class="riquadro_scacco testo_scacco">
-        <article class="paragrafo_scacco sfuma_sx">
-         <a href="#" title="Entra">
-          <div class="fascia_blu spazio_scacchi"></div>
-          <h2>superior</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dignissimos laudantium tenetur, possimus sint necessitatibus eius repellendus similique voluptatibus!
-            Maxime, beatae deserunt blanditiis!</p>
-          </a>
-        </article>
-      </section>
-      <section class="riquadro_scacco testo_scacco">
-        <article class="paragrafo_scacco sfuma_dx">
-         <a href="#" title="Entra">
-          <div class="fascia_blu spazio_scacchi"></div>
-          <h2>classic</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dignissimos laudantium tenetur, possimus sint necessitatibus eius repellendus similique voluptatibus!
-            Maxime, beatae deserunt blanditiis!</p>
-          </a>
-        </article>
-      </section>
-      <figure class="riquadro_scacco immagine_scacco camera_tre">
-      </figure>
-
     </div>
-    <div class="vertical clearfix">
-      <figure>
-        <img class="sky pool" src="img/pianta.jpg" alt="Piscina dall'alto">
-      </figure>
-      <article class="riquadro_testo sale_restaurant">
-        <div class="testo_sala">
-          <div class="fascia_blu no_resort sala"></div>
-          <h2>nel segno <br> dell'eleganza</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dignissimos laudantium tenetur, possimus sint necessitatibus eius repellendus similique voluptatibus! Maxime, beatae deserunt !</p>
-        </div>
-      </article>
-      <figure>
-        <img class="sky resort" src="img/specchio.jpg" alt="Piscina dall'alto">
-        <article class="riquadro_testo sale_restaurant">
-          <div class="testo_sala">
-            <div class="fascia_blu no_resort sala"></div>
-            <h2>comfort contemporaneo</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dignissimos laudantium tenetur, possimus sint necessitatibus eius repellendus similique voluptatibus! Maxime, beatae deserunt !</p>
-          </div>
-        </article>
-      </figure>
+  </div>
+  <div id="copyright">
+    <div class="contenitore slider_desktop copy">
+      <p>Copyright 2020 MarcoBerdinWebDesign - Tutti i diritti riservati </p>
+      <p>Termini e Condizioni - Design e Sviluppo: Marco Berdin</p>
     </div>
-    <div class="slide vasca_gnocca">
-      <div class="contenitore slider_desktop">
+  </div> -->
+  <div class="slide vasca_gnocca newsletter">
 
-        <div class="riquadro_blu sx modulo">
-          <img src="img/virgolette.png" alt="Virgolette" height="42" width="49">
-          <h3>newsletter</h3>
+    <div class="riquadro_blu rbs">
+      <div class="riquadro_blu_testo">
+        <div class="newsletter_contenitore">
+          <h2 class="newsletter_title">Newsletter</h2>
           <p class="newsletter_text">Iscriviti alla nostra Newsletter per non perdere offerte, eventi e novità.</p>
           <form class="newsletter_form" action="invio_dati.php" method="post">
             <p>
-              <input type="email" name="Email_for" placeholder="email">
+              <input type="text" name="Name_for" placeholder="Nome"><br>
+              <input type="email" name="Email_for" placeholder="Em@il"><br>
               <input type="submit" value="Iscriviti!">
             </p>
           </form>
         </div>
       </div>
     </div>
-    <div class="follow_us">
-       <div class="contenitore clearfix">
-       <div class="follo_us_social">
+
+  </div>
+
+  <div class="follow_us">
+    <div class="contenitore clearfix">
+      <div class="follo_us_social clearfix">
         <a class="follow_us_social_icon" href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
         <a class="follow_us_social_icon" href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
         <a class="follow_us_social_icon" href="#" title="Tik Tok"><i class="fab fa-tiktok"></i></a>
         <a class="follow_us_social_icon" href="#" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
-        </div>
-        </div>
-      </div>
-    <div id="copyright">
-      <div class="contenitore slider_desktop copy">
-        <p>Copyright 2020 MarcoBerdinWebDesign - Tutti i diritti riservati </p>
-        <p>Termini e Condizioni - Design e Sviluppo: Marco Berdin</p>
       </div>
     </div>
+  </div>
+
+  <footer class="slide">
+    <div id="contenitore_contatti" class="riquadro_blu rbd">
+      <div class="contenitore_contatti_paragrafo">
+        <h2>Contattaci</h2>
+        <ul>
+          <li class="mail"><a href="">info@mwr.it</a></li>
+          <li class="tel"><a href="">+39 0754 6493464</a></li>
+          <li class="address"><a href="">Via Goffredo de Paperis, <br>35, Sassari (SS)</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7850.49978610592!2d9.59530744079763!3d40.99066941083369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcb5e5edbf79a667!2sVilla%20Delfino%20Guest%20House!5e1!3m2!1sit!2sit!4v1604532608122!5m2!1sit!2sit"
+      width="1440" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+      tabindex="0"></iframe>
+
+  </footer>
+
+  <div id="copyright">
+    <div class="contenitore slider_desktop clearfix copy">
+      <p>Copyright 2020 MarcoBerdinWebDesign - Tutti i diritti riservati </p>
+      <p>Termini e Condizioni - Design e Sviluppo: Marco Berdin</p>
+    </div>
+  </div>
+</body>
 
 
 
@@ -278,6 +371,6 @@
 
 
 
+</body>
 
-  </body>
 </html>
